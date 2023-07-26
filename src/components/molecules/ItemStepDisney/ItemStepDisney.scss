@@ -1,0 +1,63 @@
+.itemstepdisney {
+}
+
+.benefits__multimedia__flex-normal {
+  display: flex;
+  gap: 1.5625rem;
+}
+
+.progress-container {
+  //   height: 100%;
+  width: 0.125rem;
+
+  border-radius: 0.125rem;
+
+  background: #dee3ed;
+  //   transition: height 0.4s ease;
+}
+
+.progress-container .progress {
+  height: 0;
+  width: 100%;
+  border-radius: 0.125rem;
+
+  background: #0f265c;
+
+  //   transition: height 8s ease;
+}
+
+.benefits__multimedia__flex {
+  max-width: 21.8125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.benefits__multimedia__title {
+  font-family: 'Prelo';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2c2c30;
+  width: 100%;
+  cursor: pointer;
+}
+
+.benefits__panel-acordeon {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+.benefits__multimedia__description {
+  padding-top: 8px;
+  display: flex;
+  font-family: 'Prelo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6e6e73;
+  max-width: 21.875rem;
+}
