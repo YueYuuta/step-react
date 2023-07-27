@@ -60,4 +60,60 @@
   line-height: 20px;
   color: #6e6e73;
   max-width: 21.875rem;
+  // margin: 0;
+}
+
+//segunda parte
+
+.benefits__multimediia__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 5rem 1rem 5rem 3.5rem;
+}
+
+.benefits__multimediia__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.linkQuestion {
+  font-family: 'Prelo';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #2f7abf;
+  text-decoration-line: none;
+}
+
+.linkQuestion:hover {
+  text-decoration-line: underline;
+}
+
+//tercera parte
+.benefits__multimedia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(7, 7, 7, 0.16),
+    0px 8px 8px -8px rgba(7, 7, 7, 0.16);
+  border-radius: 0.5rem;
+}
+
+.benefits__multimediia__img {
+  background-color: #fffcf2;
+  border-radius: 0.5rem 0 0 0.5rem;
+  /* border-top-left-radius: .5rem; */
+  display: flex;
+}
+
+.benefits__multimediia__img img {
+  // object-fit: contain;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }

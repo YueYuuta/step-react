@@ -8,19 +8,18 @@ export type StepDisneyProps = {};
 
 const StepDisney: React.FC<StepDisneyProps> = ({}) => {
   return (
-    <div className='benefits__multimediia__content'>
-      <div className='benefits__multimediia__body' id='content-item-accordeon'>
-        <ItemStepDisney dataStep={dataAcordeon}></ItemStepDisney>
+    <section className='benefits hidde-lg pt-benedicios'>
+      <div className='benefits__header'>
+        <h5 className='benefits__title-small'>Beneficios</h5>
+        <h1 className='benefits__title-big'>
+          Maneja tu dinero desde cualquier parte
+        </h1>
+        <h5 className='benefits__title-midium'>
+          Descubre todo lo que puedes hacer con Banca Web.
+        </h5>
       </div>
-      <a
-        className='linkQuestion'
-        target='_blank'
-        href='https://pichincha-app.onelink.me/Ugt0/3selu8ag
-      '
-      >
-        ¿No tienes Banca Web? Regístrate
-      </a>
-    </div>
+      <ItemStepDisney dataStep={dataAcordeon}></ItemStepDisney>
+    </section>
   );
 };
 
