@@ -23,9 +23,9 @@ const ItemStepDisney: React.FC<ItemStepDisneyProps> = ({ dataStep }) => {
       const bandera = 1;
       closeAndOpen(bandera, true);
       const id = initInterval(bandera, true);
-      return () => clearInterval(id); // Aquí limpiamos el intervalo cuando el componente se desmonta o cuando se detiene el bucle
+      return () => clearInterval(id);
     }
-  }, [activo]); // Este efecto depende del estado 'activo', por lo que se ejecutará cada vez que 'activo' cambie
+  }, [activo]);
 
   const initInterval = (idItem: number, firstTime: boolean) => {
     let bandera = idItem;
@@ -37,11 +37,7 @@ const ItemStepDisney: React.FC<ItemStepDisneyProps> = ({ dataStep }) => {
       }
       setImagen(dataStep[bandera - 1].image);
       closeAndOpen(bandera, firstTime);
-      // console.log('Este mensaje se muestra cada 5 segundos');
     }, 8000);
-
-    //clearInterval(id);
-    // setIntervalValue((prevValues) => [...prevValues, id]);
 
     return id;
   };
@@ -52,7 +48,7 @@ const ItemStepDisney: React.FC<ItemStepDisneyProps> = ({ dataStep }) => {
     setIntervalValue([]);
   };
 
-  const detenerBucle = () => setActivo(false); // Función para detener el bucle
+  const detenerBucle = () => setActivo(false);
 
   useEffect(() => {}, [dataStep]);
 
@@ -63,9 +59,8 @@ const ItemStepDisney: React.FC<ItemStepDisneyProps> = ({ dataStep }) => {
   };
 
   function closeAndOpen(id: number, firstTime: boolean) {
-    // console.log(dataStep[id].image, 'sdjasjdjasdjasjd');
     setImagen(dataStep[id - 1].image);
-    // cleanIntervalCustom();
+
     let state = true;
     if (refs.current[id]?.style.maxHeight === '0px') {
       state = false;
@@ -95,11 +90,6 @@ const ItemStepDisney: React.FC<ItemStepDisneyProps> = ({ dataStep }) => {
       }, 8000);
 
       setIntervalValue((prevValues) => [...prevValues, idSet]);
-      // detenerBucle();
-      // cleanIntervalCustom();
-      // initInterval(id, firstTime);
-      // //clearInterval(blucle(id));
-      // // setActivo(true);
     }
   }
   return (
@@ -154,14 +144,6 @@ const ItemStepDisney: React.FC<ItemStepDisneyProps> = ({ dataStep }) => {
             </div>
           ))}
         </div>
-        <a
-          className='linkQuestion'
-          target='_blank'
-          href='https://pichincha-app.onelink.me/Ugt0/3selu8ag
-         '
-        >
-          ¿No tienes Banca Web? Regístrate
-        </a>
       </div>
     </div>
   );
