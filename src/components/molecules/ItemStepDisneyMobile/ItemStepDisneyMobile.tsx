@@ -23,13 +23,13 @@ const ItemStepDisneyMobile: React.FC<ItemStepDisneyMobileProps> = ({
   return (
     <section className='container-mobile hidde-xs pt-benedicios'>
       <div className='benefits__header'>
-        <h5 className='benefits__title-small'>Beneficios</h5>
+        {/* <h5 className='benefits__title-small'>Beneficios</h5> */}
         <h1 className='benefits__title-big'>
-          Maneja tu dinero desde cussssalquier parte
+          Los mundos mágicos de Disney incluyen:
         </h1>
-        <h5 className='benefits__title-midium'>
+        {/* <h5 className='benefits__title-midium'>
           Descubre todo lo que puedes hacer con Banca Web.
-        </h5>
+        </h5> */}
       </div>
       <div className='container-swipper'>
         <Swiper
@@ -62,7 +62,7 @@ const ItemStepDisneyMobile: React.FC<ItemStepDisneyMobileProps> = ({
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className='footer-link'>
+        {/* <div className='footer-link'>
           <a
             className='linkQuestion'
             target='_blank'
@@ -71,7 +71,7 @@ const ItemStepDisneyMobile: React.FC<ItemStepDisneyMobileProps> = ({
           >
             ¿No tienes Banca Web? Regístrate
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
